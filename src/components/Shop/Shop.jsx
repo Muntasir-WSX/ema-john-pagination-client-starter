@@ -9,11 +9,17 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([])
 
+    const {count} = useLoaderData();
+    console.log(count); 
+
+
     useEffect(() => {
         fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
+
+
 
     useEffect(() => {
         const storedCart = getShoppingCart();

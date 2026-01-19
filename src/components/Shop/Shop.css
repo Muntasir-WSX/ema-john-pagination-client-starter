@@ -24,4 +24,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+   
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    border: 1px solid #FF9900;
+    background-color: white;
+    color: #FF9900;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #FF9900;
+    color: white;
+}
+
+.pagination button:active {
+    background-color: #FF9900;
+    color: white;
+} 

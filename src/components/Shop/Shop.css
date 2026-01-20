@@ -61,3 +61,20 @@
     color: white;
     border-color: #FF9900;
 }
+
+.pagination button.nav-button {
+    background-color: #FF9900;
+    color: white;
+    border-color: #FF9900;
+    padding: 8px 12px;
+    border: 1px solid #FF9900;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.pagination button.nav-button:hover {
+    background-color: #E68A00;
+    border-color: #E68A00;
+}

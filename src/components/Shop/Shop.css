@@ -54,4 +54,10 @@
 .pagination button:active {
     background-color: #FF9900;
     color: white;
-} 
+}
+
+.pagination button.selected {
+    background-color: #FF9900;
+    color: white;
+    border-color: #FF9900;
+}

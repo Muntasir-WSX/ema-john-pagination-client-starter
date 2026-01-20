@@ -22,12 +22,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Shop></Shop>,
-        loader: () => fetch("http://localhost:5000/productsCount").then(res => res.json())
+        loader: cartProductsLoader
+        // loader: () => fetch("http://localhost:5000/productsCount").then(res => res.json())
       },
       {
         path: 'orders',
         element: <Orders></Orders>,
         loader: cartProductsLoader
+
       },
       {
         path: 'inventory',
